@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardio Classes - FitLife Gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="fw-bold">FitLife</span> Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" title="Home">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="classesDropdown" role="button" data-bs-toggle="dropdown" title="Classes">
+                            <i class="fas fa-dumbbell"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="classesDropdown">
+                            <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                            <li><a class="dropdown-item" href="zumba.html">Zumba</a></li>
+                            <li><a class="dropdown-item" href="strength-training.html">Strength Training</a></li>
+                            <li><a class="dropdown-item active" href="cardio.html">Cardio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../membership.html" title="Membership">
+                            <i class="fas fa-id-card"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="timeSlotDropdown" role="button" data-bs-toggle="dropdown" title="Time Slots">
+                            <i class="far fa-clock"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="timeSlotDropdown">
+                            <li><a class="dropdown-item" href="#">Morning (6AM - 10AM)</a></li>
+                            <li><a class="dropdown-item" href="#">Afternoon (12PM - 4PM)</a></li>
+                            <li><a class="dropdown-item" href="#">Evening (5PM - 9PM)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html" title="About Us">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html" title="Contact Us">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../feedback.html" title="Feedback">
+                            <i class="fas fa-comment"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" title="Login">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../admin.php" title="Admin">
+                            <i class="fas fa-user-shield"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="class-header cardio-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    <h1 class="display-4 fw-bold">Cardio Classes</h1>
+                    <p class="lead">Boost your heart health and burn calories with high-energy workouts</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Class Description Section -->
+    <section class="class-description py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Cardio Class" class="img-fluid rounded shadow-lg animate__animated animate__fadeIn">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">About Our Cardio Classes</h2>
+                    <p class="lead">Elevate your heart rate and maximize calorie burn with our dynamic cardio workouts.</p>
+                    <p>Our cardio classes are designed to improve cardiovascular health, increase endurance, and help you achieve your weight management goals. With a variety of formats from HIIT to steady-state cardio, there's something for everyone regardless of fitness level.</p>
+                    <p>Led by our expert instructors, each session incorporates the latest techniques to keep your workouts effective, engaging, and fun.</p>
+                    <div class="d-flex mt-4">
+                        <a href="../membership.html" class="btn btn-primary me-3">Join Now</a>
+                        <a href="#schedule" class="btn btn-outline-primary">View Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Benefits of Cardio Training</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-heartbeat fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Heart Health</h3>
+                            <p class="card-text">Regular cardio exercise strengthens your heart, lowers blood pressure, and improves overall cardiovascular health.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-fire fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Calorie Burning</h3>
+                            <p class="card-text">Cardio workouts are highly effective for burning calories, helping with weight management and fat loss.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-brain fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Mental Wellbeing</h3>
+                            <p class="card-text">Cardio exercise releases endorphins, reducing stress and anxiety while improving mood and cognitive function.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Meet Our Cardio Instructors</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card instructor-card border-0 shadow-sm">
+                        <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Instructor">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Ravi Kumar</h3>
+                            <p class="text-muted">HIIT Specialist</p>
+                            <p class="card-text">Ravi is a certified personal trainer with expertise in High-Intensity Interval Training. His energetic classes will push you to your limits and help you achieve maximum results.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card instructor-card border-0 shadow-sm">
+                        <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Instructor">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Meera Joshi</h3>
+                            <p class="text-muted">Spin & Cycling Coach</p>
+                            <p class="card-text">Meera specializes in indoor cycling and spin classes. Her music-driven workouts create an immersive experience that makes time fly while you burn calories.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card instructor-card border-0 shadow-sm">
+                        <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Instructor">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Arjun Malhotra</h3>
+                            <p class="text-muted">Cardio Kickboxing Expert</p>
+                            <p class="card-text">Arjun combines martial arts techniques with high-energy cardio for a full-body workout. His kickboxing classes are perfect for stress relief and building endurance.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Class Schedule</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Day</th>
+                            <th>Morning (6AM - 10AM)</th>
+                            <th>Afternoon (12PM - 4PM)</th>
+                            <th>Evening (5PM - 9PM)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Monday</strong></td>
+                            <td>
+                                <div class="class-time">6:00 AM - 7:00 AM</div>
+                                <div class="class-name">HIIT</div>
+                                <div class="instructor">Ravi Kumar</div>
+                            </td>
+                            <td>
+                                <div class="class-time">12:30 PM - 1:30 PM</div>
+                                <div class="class-name">Lunch Break Cardio</div>
+                                <div class="instructor">Meera Joshi</div>
+                            </td>
+                            <td>
+                                <div class="class-time">6:00 PM - 7:00 PM</div>
+                                <div class="class-name">Cardio Kickboxing</div>
+                                <div class="instructor">Arjun Malhotra</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tuesday</strong></td>
+                            <td>
+                                <div class="class-time">7:30 AM - 8:30 AM</div>
+                                <div class="class-name">Spin Class</div>
+                                <div class="instructor">Meera Joshi</div>
+                            </td>
+                            <td>
+                                <div class="class-time">1:00 PM - 2:00 PM</div>
+                                <div class="class-name">Cardio Circuit</div>
+                                <div class="instructor">Ravi Kumar</div>
+                            </td>
+                            <td>
+                                <div class="class-time">7:00 PM - 8:00 PM</div>
+                                <div class="class-name">Tabata</div>
+                                <div class="instructor">Arjun Malhotra</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wednesday</strong></td>
+                            <td>
+                                <div class="class-time">6:00 AM - 7:00 AM</div>
+                                <div class="class-name">Cardio Kickboxing</div>
+                                <div class="instructor">Arjun Malhotra</div>
+                            </td>
+                            <td>
+                                <div class="class-time">12:30 PM - 1:30 PM</div>
+                                <div class="class-name">Lunch Break Cardio</div>
+                                <div class="instructor">Meera Joshi</div>
+                            </td>
+                            <td>
+                                <div class="class-time">6:00 PM - 7:00 PM</div>
+                                <div class="class-name">HIIT</div>
+                                <div class="instructor">Ravi Kumar</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thursday</strong></td>
+                            <td>
+                                <div class="class-time">7:30 AM - 8:30 AM</div>
+                                <div class="class-name">Spin Class</div>
+                                <div class="instructor">Meera Joshi</div>
+                            </td>
+                            <td>
+                                <div class="class-time">1:00 PM - 2:00 PM</div>
+                                <div class="class-name">Cardio Circuit</div>
+                                <div class="instructor">Ravi Kumar</div>
+                            </td>
+                            <td>
+                                <div class="class-time">7:00 PM - 8:00 PM</div>
+                                <div class="class-name">Tabata</div>
+                                <div class="instructor">Arjun Malhotra</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Friday</strong></td>
+                            <td>
+                                <div class="class-time">6:00 AM - 7:00 AM</div>
+                                <div class="class-name">HIIT</div>
+                                <div class="instructor">Ravi Kumar</div>
+                            </td>
+                            <td>
+                                <div class="class-time">12:30 PM - 1:30 PM</div>
+                                <div class="class-name">Lunch Break Cardio</div>
+                                <div class="instructor">Meera Joshi</div>
+                            </td>
+                            <td>
+                                <div class="class-time">6:00 PM - 7:30 PM</div>
+                                <div class="class-name">Cardio Blast</div>
+                                <div class="instructor">All Instructors</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Saturday</strong></td>
+                            <td>
+                                <div class="class-time">8:00 AM - 9:30 AM</div>
+                                <div class="class-name">Weekend Cardio Mix</div>
+                                <div class="instructor">Ravi Kumar</div>
+                            </td>
+                            <td>
+                                <div class="class-time">1:00 PM - 2:00 PM</div>
+                                <div class="class-name">Spin Class</div>
+                                <div class="instructor">Meera Joshi</div>
+                            </td>
+                            <td>
+                                <div class="class-time">5:00 PM - 6:00 PM</div>
+                                <div class="class-name">Cardio Kickboxing</div>
+                                <div class="instructor">Arjun Malhotra</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sunday</strong></td>
+                            <td>
+                                <div class="class-time">9:00 AM - 10:30 AM</div>
+                                <div class="class-name">Family Cardio</div>
+                                <div class="instructor">All Instructors</div>
+                            </td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Cardio Students Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn">
+                        <div class="card-body">
+                            <div class="testimonial-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"The HIIT classes with Ravi have completely transformed my fitness level. I've lost 10kg in just 3 months and have so much more energy throughout the day. The workouts are challenging but incredibly rewarding!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Aditya Sharma</h5>
+                                    <small class="text-muted">Member since 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                        <div class="card-body">
+                            <div class="testimonial-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text">"Meera's spin classes are the highlight of my week! The music is fantastic, and she knows exactly how to motivate everyone in the room. I've seen significant improvements in my endurance and leg strength."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Neha Gupta</h5>
+                                    <small class="text-muted">Member since 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                        <div class="card-body">
+                            <div class="testimonial-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Arjun's cardio kickboxing class is the perfect stress reliever after a long day at work. Not only am I getting fitter, but I'm also learning some self-defense moves. The atmosphere is always positive and encouraging."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Vikram Singh</h5>
+                                    <small class="text-muted">Member since 2021</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Boost Your Cardio Fitness?</h2>
+            <p class="lead mb-4">Join our energetic cardio classes and transform your health and fitness.</p>
+            <a href="../membership.html" class="btn btn-light btn-lg">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>FitLife Gym</h5>
+                    <p>Your ultimate fitness destination for a healthier, stronger you.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../membership.html">Membership</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                        <li><a href="../feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Mumbai, India</p>
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fas fa-envelope"></i> info@fitlifegym.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2023 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="../backend/login.php" method="post">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" name="password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="../membership.html">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

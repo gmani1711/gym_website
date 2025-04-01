@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumba Classes - FitLife Gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="fw-bold">FitLife</span> Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" title="Home">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="classesDropdown" role="button" data-bs-toggle="dropdown" title="Classes">
+                            <i class="fas fa-dumbbell"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="classesDropdown">
+                            <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                            <li><a class="dropdown-item active" href="zumba.html">Zumba</a></li>
+                            <li><a class="dropdown-item" href="strength-training.html">Strength Training</a></li>
+                            <li><a class="dropdown-item" href="cardio.html">Cardio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../membership.html" title="Membership">
+                            <i class="fas fa-id-card"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="timeSlotDropdown" role="button" data-bs-toggle="dropdown" title="Time Slots">
+                            <i class="far fa-clock"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="timeSlotDropdown">
+                            <li><a class="dropdown-item" href="#">Morning (6AM - 10AM)</a></li>
+                            <li><a class="dropdown-item" href="#">Afternoon (12PM - 4PM)</a></li>
+                            <li><a class="dropdown-item" href="#">Evening (5PM - 9PM)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html" title="About Us">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html" title="Contact Us">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../feedback.html" title="Feedback">
+                            <i class="fas fa-comment"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" title="Login">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../admin.php" title="Admin">
+                            <i class="fas fa-user-shield"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="class-header zumba-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    <h1 class="display-4 fw-bold">Zumba Classes</h1>
+                    <p class="lead">Dance your way to fitness with high-energy workouts</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Class Description Section -->
+    <section class="class-description py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Zumba Class" class="img-fluid rounded shadow-lg animate__animated animate__fadeIn">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">About Our Zumba Classes</h2>
+                    <p class="lead">Ditch the workout, join the party with our high-energy Zumba classes!</p>
+                    <p>Zumba is a fitness program that combines Latin and international music with dance moves. It incorporates interval training—alternating fast and slow rhythms—to help improve cardiovascular fitness.</p>
+                    <p>Our Zumba classes are perfect for everybody and every body! Each class is designed to bring people together to sweat it out while enjoying the infectious energy of Latin and World rhythms.</p>
+                    <div class="d-flex mt-4">
+                        <a href="../membership.html" class="btn btn-primary me-3">Join Now</a>
+                        <a href="#schedule" class="btn btn-outline-primary">View Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Benefits of Zumba</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-heartbeat fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Calorie Burning</h3>
+                            <p class="card-text">Zumba is an effective cardio workout that can burn between 600-1000 calories per hour, helping with weight management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-smile-beam fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Mood Enhancement</h3>
+                            <p class="card-text">The combination of music, movement, and community creates a party atmosphere that boosts mood and reduces stress.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-music fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Full-Body Workout</h3>
+                            <p class="card-text">Zumba engages multiple muscle groups, improving coordination, agility, and overall body toning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Meet Our Zumba Instructors</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card instructor-card border-0 shadow-sm">
+                        <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Instructor">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Neha Gupta</h3>
+                            <p class="text-muted">Lead Zumba Instructor</p>
+                            <p class="card-text">Neha is a certified Zumba instructor with over 8 years of experience. Her high-energy classes combine traditional Zumba with modern dance moves for a fun, effective workout.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card instructor-card border-0 shadow-sm">
+                        <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Instructor">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Arjun Mehta</h3>
+                            <p class="text-muted">Zumba Fitness Specialist</p>
+                            <p class="card-text">Arjun specializes in high-intensity Zumba workouts that focus on cardio and strength building. His classes are known for their infectious energy and challenging routines.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card instructor-card border-0 shadow-sm">
+                        <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Instructor">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pooja Sharma</h3>
+                            <p class="text-muted">Zumba Gold & Toning</p>
+                            <p class="card-text">Pooja specializes in Zumba Gold for beginners and seniors, as well as Zumba Toning which incorporates light weights for muscle conditioning.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Class Schedule</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Day</th>
+                            <th>Morning (6AM - 10AM)</th>
+                            <th>Afternoon (12PM - 4PM)</th>
+                            <th>Evening (5PM - 9PM)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Monday</strong></td>
+                            <td>
+                                <div class="class-time">7:00 AM - 8:00 AM</div>
+                                <div class="class-name">Zumba Fitness</div>
+                                <div class="instructor">Neha Gupta</div>
+                            </td>
+                            <td>
+                                <div class="class-time">1:00 PM - 2:00 PM</div>
+                                <div class="class-name">Zumba Gold</div>
+                                <div class="instructor">Pooja Sharma</div>
+                            </td>
+                            <td>
+                                <div class="class-time">6:30 PM - 7:30 PM</div>
+                                <div class="class-name">Zumba Strong</div>
+                                <div class="instructor">Arjun Mehta</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tuesday</strong></td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                            <td>
+                                <div class="class-time">12:30 PM - 1:30 PM</div>
+                                <div class="class-name">Lunch Break Zumba</div>
+                                <div class="instructor">Neha Gupta</div>
+                            </td>
+                            <td>
+                                <div class="class-time">7:00 PM - 8:00 PM</div>
+                                <div class="class-name">Zumba Toning</div>
+                                <div class="instructor">Pooja Sharma</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wednesday</strong></td>
+                            <td>
+                                <div class="class-time">7:00 AM - 8:00 AM</div>
+                                <div class="class-name">Zumba Fitness</div>
+                                <div class="instructor">Arjun Mehta</div>
+                            </td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                            <td>
+                                <div class="class-time">6:30 PM - 7:30 PM</div>
+                                <div class="class-name">Zumba Party</div>
+                                <div class="instructor">Neha Gupta</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thursday</strong></td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                            <td>
+                                <div class="class-time">12:30 PM - 1:30 PM</div>
+                                <div class="class-name">Lunch Break Zumba</div>
+                                <div class="instructor">Pooja Sharma</div>
+                            </td>
+                            <td>
+                                <div class="class-time">7:00 PM - 8:00 PM</div>
+                                <div class="class-name">Zumba Strong</div>
+                                <div class="instructor">Arjun Mehta</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Friday</strong></td>
+                            <td>
+                                <div class="class-time">7:00 AM - 8:00 AM</div>
+                                <div class="class-name">Zumba Fitness</div>
+                                <div class="instructor">Neha Gupta</div>
+                            </td>
+                            <td>
+                                <div class="class-time">1:00 PM - 2:00 PM</div>
+                                <div class="class-name">Zumba Gold</div>
+                                <div class="instructor">Pooja Sharma</div>
+                            </td>
+                            <td>
+                                <div class="class-time">6:30 PM - 8:00 PM</div>
+                                <div class="class-name">Zumba Dance Party</div>
+                                <div class="instructor">All Instructors</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Saturday</strong></td>
+                            <td>
+                                <div class="class-time">9:00 AM - 10:00 AM</div>
+                                <div class="class-name">Weekend Zumba</div>
+                                <div class="instructor">Arjun Mehta</div>
+                            </td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                            <td>
+                                <div class="class-time">5:00 PM - 6:00 PM</div>
+                                <div class="class-name">Zumba Toning</div>
+                                <div class="instructor">Pooja Sharma</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sunday</strong></td>
+                            <td>
+                                <div class="class-time">10:00 AM - 11:00 AM</div>
+                                <div class="class-name">Family Zumba</div>
+                                <div class="instructor">Neha Gupta</div>
+                            </td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                            <td>
+                                <div class="class-time">No Classes</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Zumba Students Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn">
+                        <div class="card-body">
+                            <div class="testimonial-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"I've tried many fitness classes, but Zumba at FitLife is by far the most fun! I don't even feel like I'm working out. Neha's energy is contagious, and I've lost 8kg in just 3 months!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Ritu Desai</h5>
+                                    <small class="text-muted">Member since 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                        <div class="card-body">
+                            <div class="testimonial-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text">"As a 60-year-old, I was hesitant to join a dance fitness class, but Pooja's Zumba Gold is perfect for my fitness level. I've improved my mobility and made wonderful friends in the process."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Rajesh Khanna</h5>
+                                    <small class="text-muted">Member since 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                        <div class="card-body">
+                            <div class="testimonial-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Arjun's Zumba Strong classes have completely transformed my fitness level. The combination of cardio and strength training has helped me build muscle while losing weight. It's challenging but so worth it!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Priya Malhotra</h5>
+                                    <small class="text-muted">Member since 2021</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Join the Zumba Party?</h2>
+            <p class="lead mb-4">Experience the joy of fitness through dance with our energetic Zumba classes.</p>
+            <a href="../membership.html" class="btn btn-light btn-lg">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>FitLife Gym</h5>
+                    <p>Your ultimate fitness destination for a healthier, stronger you.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../membership.html">Membership</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                        <li><a href="../feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Mumbai, India</p>
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fas fa-envelope"></i> info@fitlifegym.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2023 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="../backend/login.php" method="post">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" name="password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="../membership.html">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

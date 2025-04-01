@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Your Fitness Journey Starts Here</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold">FitLife</span> Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Home">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="classesDropdown" role="button" data-bs-toggle="dropdown" title="Classes">
+                            <i class="fas fa-dumbbell"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="classesDropdown">
+                            <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                            <li><a class="dropdown-item" href="zumba.html">Zumba</a></li>
+                            <li><a class="dropdown-item" href="strength-training.html">Strength Training</a></li>
+                            <li><a class="dropdown-item" href="cardio.html">Cardio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html" title="Membership">
+                            <i class="fas fa-id-card"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="timeSlotDropdown" role="button" data-bs-toggle="dropdown" title="Time Slots">
+                            <i class="far fa-clock"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="timeSlotDropdown">
+                            <li><a class="dropdown-item" href="#">Morning (6AM - 10AM)</a></li>
+                            <li><a class="dropdown-item" href="#">Afternoon (12PM - 4PM)</a></li>
+                            <li><a class="dropdown-item" href="#">Evening (5PM - 9PM)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php" title="About Us">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php" title="Contact Us">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.php" title="Feedback">
+                            <i class="fas fa-comment"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" title="Login">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-8 text-white animate__animated animate__fadeIn">
+                    <h1 class="display-3 fw-bold">Transform Your Body, Transform Your Life</h1>
+                    <p class="lead">Join FitLife Gym today and start your fitness journey with expert trainers and state-of-the-art equipment.</p>
+                    <a href="membership.html" class="btn btn-primary btn-lg">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section
+    <section class="features py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose FitLife Gym?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card animate__animated animate__fadeIn">
+                        <div class="card-body text-center">
+                            <i class="fas fa-dumbbell fa-3x mb-3"></i>
+                            <h3>Modern Equipment</h3>
+                            <p>State-of-the-art fitness equipment for all your workout needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-3x mb-3"></i>
+                            <h3>Expert Trainers</h3>
+                            <p>Certified personal trainers to guide you through your fitness journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-heartbeat fa-3x mb-3"></i>
+                            <h3>Health Tracking</h3>
+                            <p>Personalized health tracking to monitor your progress and achievements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Classes Section
+    <section class="classes py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Classes</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card class-card animate__animated animate__fadeIn">
+                        <img src="yoga.jpg" class="card-img-top" alt="Yoga Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga</h5>
+                            <p class="card-text">Find your inner peace and improve flexibility with our yoga classes.</p>
+                            <a href="yoga.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card class-card animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                        <img src="/placeholder.svg?height=200&width=300" class="card-img-top" alt="Zumba Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Zumba</h5>
+                            <p class="card-text">Dance your way to fitness with our energetic Zumba sessions.</p>
+                            <a href="zumba.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card class-card animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                        <img src="/placeholder.svg?height=200&width=300" class="card-img-top" alt="Strength Training">
+                        <div class="card-body">
+                            <h5 class="card-title">Strength Training</h5>
+                            <p class="card-text">Build muscle and increase strength with our comprehensive training.</p>
+                            <a href="strength-training.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card class-card animate__animated animate__fadeIn" style="animation-delay: 0.6s;">
+                        <img src="/placeholder.svg?height=200&width=300" class="card-img-top" alt="Cardio Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Cardio</h5>
+                            <p class="card-text">Boost your heart health and burn calories with our cardio workouts.</p>
+                            <a href="cardio.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Members Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn">
+                        <div class="card-body">
+                            <p class="card-text">"FitLife Gym has completely transformed my life. I've lost 15kg and gained so much confidence!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Priya Sharma</h5>
+                                    <small class="text-muted">Member since 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                        <div class="card-body">
+                            <p class="card-text">"The trainers here are exceptional. They've helped me achieve fitness goals I never thought possible."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Rahul Patel</h5>
+                                    <small class="text-muted">Member since 2021</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                        <div class="card-body">
+                            <p class="card-text">"The health tracking system has been a game-changer for me. I can see my progress and stay motivated."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="/placeholder.svg?height=50&width=50" class="rounded-circle me-3" alt="Testimonial">
+                                <div>
+                                    <h5 class="mb-0">Ananya Singh</h5>
+                                    <small class="text-muted">Member since 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta py-5 text-white text-center">
+        <div class="container">
+            <h2 class="mb-3">Ready to Start Your Fitness Journey?</h2>
+            <p class="lead mb-4">Join FitLife Gym today and transform your life with our expert trainers and state-of-the-art facilities.</p>
+            <a href="membership.html" class="btn btn-light btn-lg">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>FitLife Gym</h5>
+                    <p>Your ultimate fitness destination for a healthier, stronger you.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="feedback.php">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Mumbai, India</p>
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fas fa-envelope"></i> info@fitlifegym.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2023 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="backend/login.php" method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="membership.html">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
