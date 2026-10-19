@@ -122,7 +122,7 @@ function calculate_missed_days($userId, $days = 30) {
     
     // Calculate all dates in the period
     $allDates = [];
-    for ($i = 0; $i &lt; $days; $i++) {
+    for ($i = 0; $i < $days; $i++) {
         $date = date('Y-m-d', strtotime("-$i days"));
         $allDates[] = $date;
     }

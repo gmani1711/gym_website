@@ -11,8 +11,6 @@ if (session_status() == PHP_SESSION_NONE) {
 // Check if user is logged in and is an admin
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
     header('Content-Type: application/json');
-    echo json_encode(['error' => '  != 1) {
-    header('Content-Type: application/json');
     echo json_encode(['error' => 'Unauthorized access']);
     exit();
 }

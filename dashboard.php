@@ -35,24 +35,24 @@ $workoutRecommendations = get_workout_recommendations($userId);
 $dietRecommendations = get_diet_recommendations($userId);
 ?>
 
-&lt;!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - FitLife Gym</title>
-    &lt;!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    &lt;!-- Font Awesome for icons -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    &lt;!-- Chart.js -->
+    <!-- Chart.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.css">
-    &lt;!-- Custom CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 <body>
-    &lt;!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -119,7 +119,7 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </nav>
 
-    &lt;!-- Dashboard Header -->
+    <!-- Dashboard Header -->
     <header class="dashboard-header">
         <div class="container">
             <div class="row align-items-center">
@@ -135,7 +135,7 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </header>
 
-    &lt;!-- Dashboard Content -->
+    <!-- Dashboard Content -->
     <section class="dashboard-content py-5">
         <div class="container">
             <?php if (isset($_SESSION['success'])): ?>
@@ -158,7 +158,7 @@ $dietRecommendations = get_diet_recommendations($userId);
                 </div>
             <?php endif; ?>
 
-            &lt;!-- Quick Stats -->
+            <!-- Quick Stats -->
             <div class="row mb-4">
                 <div class="col-md-3 mb-3">
                     <div class="card stat-card">
@@ -226,7 +226,7 @@ $dietRecommendations = get_diet_recommendations($userId);
                 </div>
             </div>
 
-            &lt;!-- Main Dashboard Tabs -->
+            <!-- Main Dashboard Tabs -->
             <ul class="nav nav-tabs mb-4" id="dashboardTabs" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
@@ -243,7 +243,7 @@ $dietRecommendations = get_diet_recommendations($userId);
             </ul>
 
             <div class="tab-content" id="dashboardTabsContent">
-                &lt;!-- Overview Tab -->
+                <!-- Overview Tab -->
                 <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
                     <div class="row">
                         <div class="col-md-8">
@@ -393,7 +393,7 @@ $dietRecommendations = get_diet_recommendations($userId);
                     </div>
                 </div>
                 
-                &lt;!-- Progress Tracking Tab -->
+                <!-- Progress Tracking Tab -->
                 <div class="tab-pane fade" id="progress" role="tabpanel" aria-labelledby="progress-tab">
                     <div class="row">
                         <div class="col-md-12 mb-4">
@@ -472,7 +472,7 @@ $dietRecommendations = get_diet_recommendations($userId);
                     </div>
                 </div>
                 
-                &lt;!-- Recommendations Tab -->
+                <!-- Recommendations Tab -->
                 <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab">
                     <div class="row">
                         <div class="col-md-6 mb-4">
@@ -609,7 +609,7 @@ $dietRecommendations = get_diet_recommendations($userId);
                     </div>
                 </div>
                 
-                &lt;!-- Profile Tab -->
+                <!-- Profile Tab -->
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="row">
                         <div class="col-md-4 mb-4">
@@ -733,8 +733,8 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </section>
 
-    &lt;!-- Modals -->
-    &lt;!-- Log Workout Modal -->
+    <!-- Modals -->
+    <!-- Log Workout Modal -->
     <div class="modal fade" id="logWorkoutModal" tabindex="-1" aria-labelledby="logWorkoutModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -782,7 +782,7 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </div>
 
-    &lt;!-- Update Health Data Modal -->
+    <!-- Update Health Data Modal -->
     <div class="modal fade" id="updateHealthModal" tabindex="-1" aria-labelledby="updateHealthModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -811,7 +811,7 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </div>
 
-    &lt;!-- Book Class Modal -->
+    <!-- Book Class Modal -->
     <div class="modal fade" id="bookClassModal" tabindex="-1" aria-labelledby="bookClassModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -858,7 +858,7 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </div>
 
-    &lt;!-- Edit Profile Modal -->
+    <!-- Edit Profile Modal -->
     <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -922,7 +922,7 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </div>
 
-    &lt;!-- Footer -->
+    <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
             <div class="row">
@@ -962,11 +962,11 @@ $dietRecommendations = get_diet_recommendations($userId);
         </div>
     </footer>
 
-    &lt;!-- Bootstrap JS Bundle with Popper -->
+    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    &lt;!-- Chart.js -->
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-    &lt;!-- Custom JS -->
+    <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dashboard.js"></script>
 </body>
